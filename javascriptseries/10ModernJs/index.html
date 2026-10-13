@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "John"
+
+        let age = 24
+
+        console.log("Good Evening My Name is " + name + "I am " + age + "yrs old")
+        //Template String - BackTick - below ESC button ${variable/parameter}
+
+        console.log(`
+        Good Evening My name is John and I am 24 years old
+        Have a Nice Eve
+        `)
+
+        // setTimeout() - Control function like timer
+
+        setTimeout(()=>{
+            console.log("Hello I will run after 5 seconds of Break")
+        },5000) //1000- 1 sec
+
+        serImterval(()=>{
+            console.log("I Will Run after every 2 seconds of Break")
+        },2000)
+
+
+        //spread operator - ... 3 dot . It will you to create clone/copy of array'
+
+        let fruits = ["apple","mango","kiwi"]
+
+        let veggies = ["tomato" , "potato"]
+
+        let items = [...fruits , ...veggies]
+
+        console.log(items)
+    </script>
+</body>
+</html>
